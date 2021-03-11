@@ -1,0 +1,42 @@
+@import './common.scss';
+
+.total-container {
+    background-color: $total-bg;
+    display: flex;
+    height: 80px;
+    align-items: center;
+    justify-content: space-around;
+
+    &__price {
+        width: 100px;
+        text-align: left;
+    }
+
+    p {
+        margin: 0;
+        color: $base-dark;
+        font-weight: bold;
+    }
+
+    button {
+        background-color: #6fbbe1;
+        border: none;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+    }
+
+    &__clear-checkout {
+        display: flex;
+        align-items: center;
+    }
+
+    &__clear {
+        padding-right: 20px;
+    }
+}

@@ -1,0 +1,61 @@
+@import './common.scss';
+
+.basket-container {
+    width: 600px;
+    border: 1px solid $base-dark;
+    background-color: #fff;
+    min-height: 100vh;
+    margin: 10px 0 100px;
+
+    > p {
+        margin: 0 0 20px;
+    }
+
+    &__items {
+        padding: 30px 0 0;
+    }
+
+    &__item {
+        display: flex;
+        padding: 10px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    &__name {
+        width: 200px;
+        text-align: left;
+    }
+
+    &__price-container {
+        display: flex;
+        justify-content: space-between;
+        width: 80px;
+    }
+
+    &__price {
+        color: $base-orange;
+        font-weight: bold;
+    }
+
+    &__amount {
+        margin: 15px;
+        padding-left: 15px;
+        height: 23px;
+        width: 22px;
+        text-align: center;
+    }
+
+    hr {
+        display: flex;
+        width: 76%;
+        border: 0;
+        border-bottom: 1px dashed #ccc;
+    }
+
+    &__remove {
+        cursor: pointer;
+        color: #adadad;
+        font-weight: bold;
+    }
+}
